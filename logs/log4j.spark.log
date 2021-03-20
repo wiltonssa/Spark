@@ -1,0 +1,586 @@
+21/03/20 10:56:24 WARN NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+21/03/20 10:56:25 INFO SecurityManager: Changing view acls to: wilto
+21/03/20 10:56:25 INFO SecurityManager: Changing modify acls to: wilto
+21/03/20 10:56:25 INFO SecurityManager: Changing view acls groups to: 
+21/03/20 10:56:25 INFO SecurityManager: Changing modify acls groups to: 
+21/03/20 10:56:25 INFO SecurityManager: SecurityManager: authentication disabled; ui acls disabled; users  with view permissions: Set(wilto); groups with view permissions: Set(); users  with modify permissions: Set(wilto); groups with modify permissions: Set()
+21/03/20 10:56:29 INFO HiveConf: Found configuration file file:/C:/Users/wilto/AppData/Local/spark/spark-3.0.1-bin-hadoop3.2/conf/hive-site.xml
+21/03/20 10:56:30 INFO SparkContext: Running Spark version 3.0.1
+21/03/20 10:56:30 WARN SparkConf: Note that spark.local.dir will be overridden by the value set by the cluster manager (via SPARK_LOCAL_DIRS in mesos/standalone/kubernetes and LOCAL_DIRS in YARN).
+21/03/20 10:56:30 INFO ResourceUtils: ==============================================================
+21/03/20 10:56:30 INFO ResourceUtils: Resources for spark.driver:
+
+21/03/20 10:56:30 INFO ResourceUtils: ==============================================================
+21/03/20 10:56:30 INFO SparkContext: Submitted application: sparklyr
+21/03/20 10:56:31 INFO SecurityManager: Changing view acls to: wilto
+21/03/20 10:56:31 INFO SecurityManager: Changing modify acls to: wilto
+21/03/20 10:56:31 INFO SecurityManager: Changing view acls groups to: 
+21/03/20 10:56:31 INFO SecurityManager: Changing modify acls groups to: 
+21/03/20 10:56:31 INFO SecurityManager: SecurityManager: authentication disabled; ui acls disabled; users  with view permissions: Set(wilto); groups with view permissions: Set(); users  with modify permissions: Set(wilto); groups with modify permissions: Set()
+21/03/20 10:56:31 INFO Utils: Successfully started service 'sparkDriver' on port 49527.
+21/03/20 10:56:31 INFO SparkEnv: Registering MapOutputTracker
+21/03/20 10:56:31 INFO SparkEnv: Registering BlockManagerMaster
+21/03/20 10:56:31 INFO BlockManagerMasterEndpoint: Using org.apache.spark.storage.DefaultTopologyMapper for getting topology information
+21/03/20 10:56:31 INFO BlockManagerMasterEndpoint: BlockManagerMasterEndpoint up
+21/03/20 10:56:31 INFO SparkEnv: Registering BlockManagerMasterHeartbeat
+21/03/20 10:56:31 INFO DiskBlockManager: Created local directory at C:\Users\wilto\AppData\Local\spark\spark-3.0.1-bin-hadoop3.2\tmp\local\blockmgr-67605c8a-1ea9-47c4-98ab-e829bce92fb1
+21/03/20 10:56:32 INFO MemoryStore: MemoryStore started with capacity 413.9 MiB
+21/03/20 10:56:32 INFO SparkEnv: Registering OutputCommitCoordinator
+21/03/20 10:56:32 WARN Utils: The configured local directories are not expected to be URIs; however, got suspicious values [C:/Users/wilto/AppData/Local/spark/spark-3.0.1-bin-hadoop3.2/tmp/local]. Please check your configured local directories.
+21/03/20 10:56:33 INFO Utils: Successfully started service 'SparkUI' on port 4040.
+21/03/20 10:56:33 INFO SparkUI: Bound SparkUI to 127.0.0.1, and started at http://127.0.0.1:4040
+21/03/20 10:56:33 INFO SparkContext: Added JAR file:/C:/Users/wilto/OneDrive/Documentos/R/win-library/4.0/sparklyr/java/sparklyr-3.0-2.12.jar at spark://127.0.0.1:49527/jars/sparklyr-3.0-2.12.jar with timestamp 1616248593181
+21/03/20 10:56:33 INFO Executor: Starting executor ID driver on host 127.0.0.1
+21/03/20 10:56:33 INFO Utils: Successfully started service 'org.apache.spark.network.netty.NettyBlockTransferService' on port 49570.
+21/03/20 10:56:33 INFO NettyBlockTransferService: Server created on 127.0.0.1:49570
+21/03/20 10:56:33 INFO BlockManager: Using org.apache.spark.storage.RandomBlockReplicationPolicy for block replication policy
+21/03/20 10:56:33 INFO BlockManagerMaster: Registering BlockManager BlockManagerId(driver, 127.0.0.1, 49570, None)
+21/03/20 10:56:33 INFO BlockManagerMasterEndpoint: Registering block manager 127.0.0.1:49570 with 413.9 MiB RAM, BlockManagerId(driver, 127.0.0.1, 49570, None)
+21/03/20 10:56:33 INFO BlockManagerMaster: Registered BlockManager BlockManagerId(driver, 127.0.0.1, 49570, None)
+21/03/20 10:56:33 INFO BlockManager: Initialized BlockManager: BlockManagerId(driver, 127.0.0.1, 49570, None)
+21/03/20 10:56:34 INFO SharedState: loading hive config file: file:/C:/Users/wilto/AppData/Local/spark/spark-3.0.1-bin-hadoop3.2/conf/hive-site.xml
+21/03/20 10:56:34 INFO SharedState: Setting hive.metastore.warehouse.dir ('C:/Users/wilto/AppData/Local/spark/spark-3.0.1-bin-hadoop3.2/tmp/hive') to the value of spark.sql.warehouse.dir ('C:/Users/wilto/AppData/Local/spark/spark-3.0.1-bin-hadoop3.2/tmp/hive').
+21/03/20 10:56:34 INFO SharedState: Warehouse path is 'C:/Users/wilto/AppData/Local/spark/spark-3.0.1-bin-hadoop3.2/tmp/hive'.
+21/03/20 10:56:35 WARN SharedState: Not allowing to set spark.sql.warehouse.dir or hive.metastore.warehouse.dir in SparkSession's options, it should be set statically for cross-session usages
+21/03/20 10:56:44 INFO HiveUtils: Initializing HiveMetastoreConnection version 2.3.7 using Spark classes.
+21/03/20 10:56:44 INFO HiveConf: Found configuration file file:/C:/Users/wilto/AppData/Local/spark/spark-3.0.1-bin-hadoop3.2/conf/hive-site.xml
+21/03/20 10:56:47 INFO SessionState: Created HDFS directory: C:/Users/wilto/AppData/Local/spark/spark-3.0.1-bin-hadoop3.2/tmp/hive/wilto/2301c645-a33f-424f-8819-83c196442a97
+21/03/20 10:56:47 INFO SessionState: Created local directory: C:/Users/wilto/AppData/Local/spark/spark-3.0.1-bin-hadoop3.2/tmp/hive/2301c645-a33f-424f-8819-83c196442a97
+21/03/20 10:56:48 INFO SessionState: Created HDFS directory: C:/Users/wilto/AppData/Local/spark/spark-3.0.1-bin-hadoop3.2/tmp/hive/wilto/2301c645-a33f-424f-8819-83c196442a97/_tmp_space.db
+21/03/20 10:56:48 INFO HiveClientImpl: Warehouse location for Hive client (version 2.3.7) is C:/Users/wilto/AppData/Local/spark/spark-3.0.1-bin-hadoop3.2/tmp/hive
+21/03/20 10:56:51 WARN HiveConf: HiveConf of name hive.stats.jdbc.timeout does not exist
+21/03/20 10:56:51 WARN HiveConf: HiveConf of name hive.stats.retries.wait does not exist
+21/03/20 10:56:51 INFO HiveMetaStore: 0: Opening raw store with implementation class:org.apache.hadoop.hive.metastore.ObjectStore
+21/03/20 10:56:51 INFO ObjectStore: ObjectStore, initialize called
+21/03/20 10:56:52 INFO Persistence: Property hive.metastore.integral.jdo.pushdown unknown - will be ignored
+21/03/20 10:56:52 INFO Persistence: Property datanucleus.cache.level2 unknown - will be ignored
+21/03/20 10:56:55 INFO ObjectStore: Setting MetaStore object pin classes with hive.metastore.cache.pinobjtypes="Table,StorageDescriptor,SerDeInfo,Partition,Database,Type,FieldSchema,Order"
+21/03/20 10:56:59 INFO MetaStoreDirectSql: Using direct SQL, underlying DB is DERBY
+21/03/20 10:56:59 INFO ObjectStore: Initialized ObjectStore
+21/03/20 10:56:59 WARN ObjectStore: Version information not found in metastore. hive.metastore.schema.verification is not enabled so recording the schema version 2.3.0
+21/03/20 10:56:59 WARN ObjectStore: setMetaStoreSchemaVersion called but recording version is disabled: version = 2.3.0, comment = Set by MetaStore UNKNOWN@192.168.1.38
+21/03/20 10:56:59 WARN ObjectStore: Failed to get database default, returning NoSuchObjectException
+21/03/20 10:56:59 INFO HiveMetaStore: Added admin role in metastore
+21/03/20 10:56:59 INFO HiveMetaStore: Added public role in metastore
+21/03/20 10:56:59 INFO HiveMetaStore: No user is added in admin role, since config is empty
+21/03/20 10:57:00 INFO HiveMetaStore: 0: get_all_functions
+21/03/20 10:57:00 INFO audit: ugi=wilto	ip=unknown-ip-addr	cmd=get_all_functions	
+21/03/20 10:57:00 INFO HiveMetaStore: 0: get_database: default
+21/03/20 10:57:00 INFO audit: ugi=wilto	ip=unknown-ip-addr	cmd=get_database: default	
+21/03/20 10:57:00 INFO HiveMetaStore: 0: get_database: global_temp
+21/03/20 10:57:00 INFO audit: ugi=wilto	ip=unknown-ip-addr	cmd=get_database: global_temp	
+21/03/20 10:57:00 WARN ObjectStore: Failed to get database global_temp, returning NoSuchObjectException
+21/03/20 10:57:00 INFO HiveMetaStore: 0: get_database: default
+21/03/20 10:57:00 INFO audit: ugi=wilto	ip=unknown-ip-addr	cmd=get_database: default	
+21/03/20 10:57:00 INFO HiveMetaStore: 0: get_database: default
+21/03/20 10:57:00 INFO audit: ugi=wilto	ip=unknown-ip-addr	cmd=get_database: default	
+21/03/20 10:57:00 INFO HiveMetaStore: 0: get_tables: db=default pat=*
+21/03/20 10:57:00 INFO audit: ugi=wilto	ip=unknown-ip-addr	cmd=get_tables: db=default pat=*	
+21/03/20 10:57:03 INFO CodeGenerator: Code generated in 564.8503 ms
+21/03/20 10:57:03 INFO CodeGenerator: Code generated in 19.1008 ms
+21/03/20 10:57:04 INFO SparkContext: Starting job: count at utils.scala:135
+21/03/20 10:57:04 INFO DAGScheduler: Registering RDD 2 (count at utils.scala:135) as input to shuffle 0
+21/03/20 10:57:04 INFO DAGScheduler: Got job 0 (count at utils.scala:135) with 1 output partitions
+21/03/20 10:57:04 INFO DAGScheduler: Final stage: ResultStage 1 (count at utils.scala:135)
+21/03/20 10:57:04 INFO DAGScheduler: Parents of final stage: List(ShuffleMapStage 0)
+21/03/20 10:57:04 INFO DAGScheduler: Missing parents: List()
+21/03/20 10:57:04 INFO DAGScheduler: Submitting ResultStage 1 (MapPartitionsRDD[5] at count at utils.scala:135), which has no missing parents
+21/03/20 10:57:04 WARN SizeEstimator: Failed to check whether UseCompressedOops is set; assuming yes
+21/03/20 10:57:04 INFO MemoryStore: Block broadcast_0 stored as values in memory (estimated size 10.1 KiB, free 413.9 MiB)
+21/03/20 10:57:04 INFO MemoryStore: Block broadcast_0_piece0 stored as bytes in memory (estimated size 5.0 KiB, free 413.9 MiB)
+21/03/20 10:57:04 INFO BlockManagerInfo: Added broadcast_0_piece0 in memory on 127.0.0.1:49570 (size: 5.0 KiB, free: 413.9 MiB)
+21/03/20 10:57:04 INFO SparkContext: Created broadcast 0 from broadcast at DAGScheduler.scala:1223
+21/03/20 10:57:04 INFO DAGScheduler: Submitting 1 missing tasks from ResultStage 1 (MapPartitionsRDD[5] at count at utils.scala:135) (first 15 tasks are for partitions Vector(0))
+21/03/20 10:57:04 INFO TaskSchedulerImpl: Adding task set 1.0 with 1 tasks
+21/03/20 10:57:05 INFO TaskSetManager: Starting task 0.0 in stage 1.0 (TID 0, 127.0.0.1, executor driver, partition 0, PROCESS_LOCAL, 7325 bytes)
+21/03/20 10:57:05 INFO Executor: Running task 0.0 in stage 1.0 (TID 0)
+21/03/20 10:57:05 INFO Executor: Fetching spark://127.0.0.1:49527/jars/sparklyr-3.0-2.12.jar with timestamp 1616248593181
+21/03/20 10:57:05 INFO TransportClientFactory: Successfully created connection to /127.0.0.1:49527 after 128 ms (0 ms spent in bootstraps)
+21/03/20 10:57:05 INFO Utils: Fetching spark://127.0.0.1:49527/jars/sparklyr-3.0-2.12.jar to C:\Users\wilto\AppData\Local\spark\spark-3.0.1-bin-hadoop3.2\tmp\local\spark-3ebfcad6-5997-4eab-ba99-6d7bab283df3\userFiles-b1c4ad52-72ac-47d1-99b8-e0e251fb8458\fetchFileTemp8483772754468951602.tmp
+21/03/20 10:57:06 INFO Executor: Adding file:/C:/Users/wilto/AppData/Local/spark/spark-3.0.1-bin-hadoop3.2/tmp/local/spark-3ebfcad6-5997-4eab-ba99-6d7bab283df3/userFiles-b1c4ad52-72ac-47d1-99b8-e0e251fb8458/sparklyr-3.0-2.12.jar to class loader
+21/03/20 10:57:06 INFO ShuffleBlockFetcherIterator: Getting 0 (0.0 B) non-empty blocks including 0 (0.0 B) local and 0 (0.0 B) host-local and 0 (0.0 B) remote blocks
+21/03/20 10:57:06 INFO ShuffleBlockFetcherIterator: Started 0 remote fetches in 12 ms
+21/03/20 10:57:06 INFO Executor: Finished task 0.0 in stage 1.0 (TID 0). 2727 bytes result sent to driver
+21/03/20 10:57:06 INFO TaskSetManager: Finished task 0.0 in stage 1.0 (TID 0) in 1667 ms on 127.0.0.1 (executor driver) (1/1)
+21/03/20 10:57:06 INFO TaskSchedulerImpl: Removed TaskSet 1.0, whose tasks have all completed, from pool 
+21/03/20 10:57:06 INFO DAGScheduler: ResultStage 1 (count at utils.scala:135) finished in 2,200 s
+21/03/20 10:57:06 INFO DAGScheduler: Job 0 is finished. Cancelling potential speculative or zombie tasks for this job
+21/03/20 10:57:06 INFO TaskSchedulerImpl: Killing all running tasks in stage 1: Stage finished
+21/03/20 10:57:06 INFO DAGScheduler: Job 0 finished: count at utils.scala:135, took 2,358063 s
+21/03/20 10:57:07 INFO HiveMetaStore: 0: get_database: default
+21/03/20 10:57:07 INFO audit: ugi=wilto	ip=unknown-ip-addr	cmd=get_database: default	
+21/03/20 10:57:07 INFO HiveMetaStore: 0: get_database: default
+21/03/20 10:57:07 INFO audit: ugi=wilto	ip=unknown-ip-addr	cmd=get_database: default	
+21/03/20 10:57:07 INFO HiveMetaStore: 0: get_tables: db=default pat=*
+21/03/20 10:57:07 INFO audit: ugi=wilto	ip=unknown-ip-addr	cmd=get_tables: db=default pat=*	
+21/03/20 10:57:07 INFO SparkContext: Starting job: count at utils.scala:135
+21/03/20 10:57:07 INFO DAGScheduler: Registering RDD 8 (count at utils.scala:135) as input to shuffle 1
+21/03/20 10:57:07 INFO DAGScheduler: Got job 1 (count at utils.scala:135) with 1 output partitions
+21/03/20 10:57:07 INFO DAGScheduler: Final stage: ResultStage 3 (count at utils.scala:135)
+21/03/20 10:57:07 INFO DAGScheduler: Parents of final stage: List(ShuffleMapStage 2)
+21/03/20 10:57:07 INFO DAGScheduler: Missing parents: List()
+21/03/20 10:57:07 INFO DAGScheduler: Submitting ResultStage 3 (MapPartitionsRDD[11] at count at utils.scala:135), which has no missing parents
+21/03/20 10:57:07 INFO MemoryStore: Block broadcast_1 stored as values in memory (estimated size 10.1 KiB, free 413.9 MiB)
+21/03/20 10:57:07 INFO MemoryStore: Block broadcast_1_piece0 stored as bytes in memory (estimated size 5.0 KiB, free 413.9 MiB)
+21/03/20 10:57:07 INFO BlockManagerInfo: Added broadcast_1_piece0 in memory on 127.0.0.1:49570 (size: 5.0 KiB, free: 413.9 MiB)
+21/03/20 10:57:07 INFO SparkContext: Created broadcast 1 from broadcast at DAGScheduler.scala:1223
+21/03/20 10:57:07 INFO DAGScheduler: Submitting 1 missing tasks from ResultStage 3 (MapPartitionsRDD[11] at count at utils.scala:135) (first 15 tasks are for partitions Vector(0))
+21/03/20 10:57:07 INFO TaskSchedulerImpl: Adding task set 3.0 with 1 tasks
+21/03/20 10:57:07 INFO TaskSetManager: Starting task 0.0 in stage 3.0 (TID 1, 127.0.0.1, executor driver, partition 0, PROCESS_LOCAL, 7325 bytes)
+21/03/20 10:57:07 INFO Executor: Running task 0.0 in stage 3.0 (TID 1)
+21/03/20 10:57:07 INFO ShuffleBlockFetcherIterator: Getting 0 (0.0 B) non-empty blocks including 0 (0.0 B) local and 0 (0.0 B) host-local and 0 (0.0 B) remote blocks
+21/03/20 10:57:07 INFO ShuffleBlockFetcherIterator: Started 0 remote fetches in 1 ms
+21/03/20 10:57:07 INFO Executor: Finished task 0.0 in stage 3.0 (TID 1). 2598 bytes result sent to driver
+21/03/20 10:57:07 INFO TaskSetManager: Finished task 0.0 in stage 3.0 (TID 1) in 16 ms on 127.0.0.1 (executor driver) (1/1)
+21/03/20 10:57:07 INFO TaskSchedulerImpl: Removed TaskSet 3.0, whose tasks have all completed, from pool 
+21/03/20 10:57:07 INFO DAGScheduler: ResultStage 3 (count at utils.scala:135) finished in 0,040 s
+21/03/20 10:57:07 INFO DAGScheduler: Job 1 is finished. Cancelling potential speculative or zombie tasks for this job
+21/03/20 10:57:07 INFO TaskSchedulerImpl: Killing all running tasks in stage 3: Stage finished
+21/03/20 10:57:07 INFO DAGScheduler: Job 1 finished: count at utils.scala:135, took 0,050531 s
+21/03/20 10:57:26 INFO HiveMetaStore: 0: get_database: default
+21/03/20 10:57:26 INFO audit: ugi=wilto	ip=unknown-ip-addr	cmd=get_database: default	
+21/03/20 10:57:26 INFO HiveMetaStore: 0: get_database: default
+21/03/20 10:57:26 INFO audit: ugi=wilto	ip=unknown-ip-addr	cmd=get_database: default	
+21/03/20 10:57:26 INFO HiveMetaStore: 0: get_tables: db=default pat=*
+21/03/20 10:57:26 INFO audit: ugi=wilto	ip=unknown-ip-addr	cmd=get_tables: db=default pat=*	
+21/03/20 10:57:26 INFO BlockManagerInfo: Removed broadcast_1_piece0 on 127.0.0.1:49570 in memory (size: 5.0 KiB, free: 413.9 MiB)
+21/03/20 10:57:26 INFO SparkContext: Starting job: collect at utils.scala:54
+21/03/20 10:57:26 INFO DAGScheduler: Job 2 finished: collect at utils.scala:54, took 0,000314 s
+21/03/20 10:57:27 INFO CodeGenerator: Code generated in 21.7224 ms
+21/03/20 10:57:28 INFO SparkContext: Starting job: collect at utils.scala:137
+21/03/20 10:57:28 INFO DAGScheduler: Got job 3 (collect at utils.scala:137) with 1 output partitions
+21/03/20 10:57:28 INFO DAGScheduler: Final stage: ResultStage 4 (collect at utils.scala:137)
+21/03/20 10:57:28 INFO DAGScheduler: Parents of final stage: List()
+21/03/20 10:57:28 INFO DAGScheduler: Missing parents: List()
+21/03/20 10:57:28 INFO DAGScheduler: Submitting ResultStage 4 (MapPartitionsRDD[21] at collect at utils.scala:137), which has no missing parents
+21/03/20 10:57:28 INFO MemoryStore: Block broadcast_2 stored as values in memory (estimated size 6.7 KiB, free 413.9 MiB)
+21/03/20 10:57:28 INFO MemoryStore: Block broadcast_2_piece0 stored as bytes in memory (estimated size 3.3 KiB, free 413.9 MiB)
+21/03/20 10:57:28 INFO BlockManagerInfo: Added broadcast_2_piece0 in memory on 127.0.0.1:49570 (size: 3.3 KiB, free: 413.9 MiB)
+21/03/20 10:57:28 INFO SparkContext: Created broadcast 2 from broadcast at DAGScheduler.scala:1223
+21/03/20 10:57:28 INFO DAGScheduler: Submitting 1 missing tasks from ResultStage 4 (MapPartitionsRDD[21] at collect at utils.scala:137) (first 15 tasks are for partitions Vector(0))
+21/03/20 10:57:28 INFO TaskSchedulerImpl: Adding task set 4.0 with 1 tasks
+21/03/20 10:57:28 INFO TaskSetManager: Starting task 0.0 in stage 4.0 (TID 2, 127.0.0.1, executor driver, partition 0, PROCESS_LOCAL, 7561 bytes)
+21/03/20 10:57:28 INFO Executor: Running task 0.0 in stage 4.0 (TID 2)
+21/03/20 10:57:28 INFO Executor: Finished task 0.0 in stage 4.0 (TID 2). 1397 bytes result sent to driver
+21/03/20 10:57:28 INFO TaskSetManager: Finished task 0.0 in stage 4.0 (TID 2) in 32 ms on 127.0.0.1 (executor driver) (1/1)
+21/03/20 10:57:28 INFO TaskSchedulerImpl: Removed TaskSet 4.0, whose tasks have all completed, from pool 
+21/03/20 10:57:28 INFO DAGScheduler: ResultStage 4 (collect at utils.scala:137) finished in 0,052 s
+21/03/20 10:57:28 INFO DAGScheduler: Job 3 is finished. Cancelling potential speculative or zombie tasks for this job
+21/03/20 10:57:28 INFO TaskSchedulerImpl: Killing all running tasks in stage 4: Stage finished
+21/03/20 10:57:28 INFO DAGScheduler: Job 3 finished: collect at utils.scala:137, took 0,065088 s
+21/03/20 10:57:28 INFO CodeGenerator: Code generated in 28.4229 ms
+21/03/20 10:57:28 INFO BlockManagerInfo: Removed broadcast_2_piece0 on 127.0.0.1:49570 in memory (size: 3.3 KiB, free: 413.9 MiB)
+21/03/20 10:57:28 INFO CodeGenerator: Code generated in 16.4026 ms
+21/03/20 10:57:28 INFO SparkContext: Starting job: count at utils.scala:135
+21/03/20 10:57:28 INFO DAGScheduler: Registering RDD 23 (count at utils.scala:135) as input to shuffle 2
+21/03/20 10:57:28 INFO DAGScheduler: Got job 4 (count at utils.scala:135) with 1 output partitions
+21/03/20 10:57:28 INFO DAGScheduler: Final stage: ResultStage 6 (count at utils.scala:135)
+21/03/20 10:57:28 INFO DAGScheduler: Parents of final stage: List(ShuffleMapStage 5)
+21/03/20 10:57:28 INFO DAGScheduler: Missing parents: List(ShuffleMapStage 5)
+21/03/20 10:57:28 INFO DAGScheduler: Submitting ShuffleMapStage 5 (MapPartitionsRDD[23] at count at utils.scala:135), which has no missing parents
+21/03/20 10:57:28 INFO MemoryStore: Block broadcast_3 stored as values in memory (estimated size 10.0 KiB, free 413.9 MiB)
+21/03/20 10:57:28 INFO MemoryStore: Block broadcast_3_piece0 stored as bytes in memory (estimated size 5.2 KiB, free 413.9 MiB)
+21/03/20 10:57:28 INFO BlockManagerInfo: Added broadcast_3_piece0 in memory on 127.0.0.1:49570 (size: 5.2 KiB, free: 413.9 MiB)
+21/03/20 10:57:28 INFO SparkContext: Created broadcast 3 from broadcast at DAGScheduler.scala:1223
+21/03/20 10:57:28 INFO DAGScheduler: Submitting 1 missing tasks from ShuffleMapStage 5 (MapPartitionsRDD[23] at count at utils.scala:135) (first 15 tasks are for partitions Vector(0))
+21/03/20 10:57:28 INFO TaskSchedulerImpl: Adding task set 5.0 with 1 tasks
+21/03/20 10:57:28 INFO TaskSetManager: Starting task 0.0 in stage 5.0 (TID 3, 127.0.0.1, executor driver, partition 0, PROCESS_LOCAL, 7550 bytes)
+21/03/20 10:57:28 INFO Executor: Running task 0.0 in stage 5.0 (TID 3)
+21/03/20 10:57:28 INFO Executor: Finished task 0.0 in stage 5.0 (TID 3). 1876 bytes result sent to driver
+21/03/20 10:57:28 INFO TaskSetManager: Finished task 0.0 in stage 5.0 (TID 3) in 193 ms on 127.0.0.1 (executor driver) (1/1)
+21/03/20 10:57:28 INFO TaskSchedulerImpl: Removed TaskSet 5.0, whose tasks have all completed, from pool 
+21/03/20 10:57:28 INFO DAGScheduler: ShuffleMapStage 5 (count at utils.scala:135) finished in 0,257 s
+21/03/20 10:57:28 INFO DAGScheduler: looking for newly runnable stages
+21/03/20 10:57:28 INFO DAGScheduler: running: Set()
+21/03/20 10:57:28 INFO DAGScheduler: waiting: Set(ResultStage 6)
+21/03/20 10:57:28 INFO DAGScheduler: failed: Set()
+21/03/20 10:57:28 INFO DAGScheduler: Submitting ResultStage 6 (MapPartitionsRDD[26] at count at utils.scala:135), which has no missing parents
+21/03/20 10:57:28 INFO MemoryStore: Block broadcast_4 stored as values in memory (estimated size 10.1 KiB, free 413.9 MiB)
+21/03/20 10:57:28 INFO MemoryStore: Block broadcast_4_piece0 stored as bytes in memory (estimated size 5.0 KiB, free 413.9 MiB)
+21/03/20 10:57:28 INFO BlockManagerInfo: Added broadcast_4_piece0 in memory on 127.0.0.1:49570 (size: 5.0 KiB, free: 413.9 MiB)
+21/03/20 10:57:28 INFO SparkContext: Created broadcast 4 from broadcast at DAGScheduler.scala:1223
+21/03/20 10:57:28 INFO DAGScheduler: Submitting 1 missing tasks from ResultStage 6 (MapPartitionsRDD[26] at count at utils.scala:135) (first 15 tasks are for partitions Vector(0))
+21/03/20 10:57:28 INFO TaskSchedulerImpl: Adding task set 6.0 with 1 tasks
+21/03/20 10:57:28 INFO TaskSetManager: Starting task 0.0 in stage 6.0 (TID 4, 127.0.0.1, executor driver, partition 0, NODE_LOCAL, 7325 bytes)
+21/03/20 10:57:28 INFO Executor: Running task 0.0 in stage 6.0 (TID 4)
+21/03/20 10:57:28 INFO ShuffleBlockFetcherIterator: Getting 1 (60.0 B) non-empty blocks including 1 (60.0 B) local and 0 (0.0 B) host-local and 0 (0.0 B) remote blocks
+21/03/20 10:57:28 INFO ShuffleBlockFetcherIterator: Started 0 remote fetches in 11 ms
+21/03/20 10:57:28 INFO Executor: Finished task 0.0 in stage 6.0 (TID 4). 2648 bytes result sent to driver
+21/03/20 10:57:28 INFO TaskSetManager: Finished task 0.0 in stage 6.0 (TID 4) in 128 ms on 127.0.0.1 (executor driver) (1/1)
+21/03/20 10:57:28 INFO TaskSchedulerImpl: Removed TaskSet 6.0, whose tasks have all completed, from pool 
+21/03/20 10:57:28 INFO DAGScheduler: ResultStage 6 (count at utils.scala:135) finished in 0,156 s
+21/03/20 10:57:28 INFO DAGScheduler: Job 4 is finished. Cancelling potential speculative or zombie tasks for this job
+21/03/20 10:57:28 INFO TaskSchedulerImpl: Killing all running tasks in stage 6: Stage finished
+21/03/20 10:57:28 INFO DAGScheduler: Job 4 finished: count at utils.scala:135, took 0,461783 s
+21/03/20 10:57:29 INFO BlockManagerInfo: Removed broadcast_3_piece0 on 127.0.0.1:49570 in memory (size: 5.2 KiB, free: 413.9 MiB)
+21/03/20 10:57:29 INFO BlockManagerInfo: Removed broadcast_4_piece0 on 127.0.0.1:49570 in memory (size: 5.0 KiB, free: 413.9 MiB)
+21/03/20 10:57:29 INFO SparkContext: Starting job: collect at utils.scala:137
+21/03/20 10:57:29 INFO DAGScheduler: Got job 5 (collect at utils.scala:137) with 1 output partitions
+21/03/20 10:57:29 INFO DAGScheduler: Final stage: ResultStage 7 (collect at utils.scala:137)
+21/03/20 10:57:29 INFO DAGScheduler: Parents of final stage: List()
+21/03/20 10:57:29 INFO DAGScheduler: Missing parents: List()
+21/03/20 10:57:29 INFO DAGScheduler: Submitting ResultStage 7 (MapPartitionsRDD[28] at collect at utils.scala:137), which has no missing parents
+21/03/20 10:57:29 INFO MemoryStore: Block broadcast_5 stored as values in memory (estimated size 7.5 KiB, free 413.9 MiB)
+21/03/20 10:57:29 INFO MemoryStore: Block broadcast_5_piece0 stored as bytes in memory (estimated size 3.7 KiB, free 413.9 MiB)
+21/03/20 10:57:29 INFO BlockManagerInfo: Added broadcast_5_piece0 in memory on 127.0.0.1:49570 (size: 3.7 KiB, free: 413.9 MiB)
+21/03/20 10:57:29 INFO SparkContext: Created broadcast 5 from broadcast at DAGScheduler.scala:1223
+21/03/20 10:57:29 INFO DAGScheduler: Submitting 1 missing tasks from ResultStage 7 (MapPartitionsRDD[28] at collect at utils.scala:137) (first 15 tasks are for partitions Vector(0))
+21/03/20 10:57:29 INFO TaskSchedulerImpl: Adding task set 7.0 with 1 tasks
+21/03/20 10:57:29 INFO TaskSetManager: Starting task 0.0 in stage 7.0 (TID 5, 127.0.0.1, executor driver, partition 0, PROCESS_LOCAL, 7561 bytes)
+21/03/20 10:57:29 INFO Executor: Running task 0.0 in stage 7.0 (TID 5)
+21/03/20 10:57:29 INFO Executor: Finished task 0.0 in stage 7.0 (TID 5). 1354 bytes result sent to driver
+21/03/20 10:57:29 INFO TaskSetManager: Finished task 0.0 in stage 7.0 (TID 5) in 12 ms on 127.0.0.1 (executor driver) (1/1)
+21/03/20 10:57:29 INFO TaskSchedulerImpl: Removed TaskSet 7.0, whose tasks have all completed, from pool 
+21/03/20 10:57:29 INFO DAGScheduler: ResultStage 7 (collect at utils.scala:137) finished in 0,036 s
+21/03/20 10:57:29 INFO DAGScheduler: Job 5 is finished. Cancelling potential speculative or zombie tasks for this job
+21/03/20 10:57:29 INFO TaskSchedulerImpl: Killing all running tasks in stage 7: Stage finished
+21/03/20 10:57:29 INFO DAGScheduler: Job 5 finished: collect at utils.scala:137, took 0,044614 s
+21/03/20 10:57:29 INFO BlockManagerInfo: Removed broadcast_5_piece0 on 127.0.0.1:49570 in memory (size: 3.7 KiB, free: 413.9 MiB)
+21/03/20 10:57:30 INFO SparkContext: Starting job: count at utils.scala:135
+21/03/20 10:57:30 INFO DAGScheduler: Registering RDD 30 (count at utils.scala:135) as input to shuffle 3
+21/03/20 10:57:30 INFO DAGScheduler: Got job 6 (count at utils.scala:135) with 1 output partitions
+21/03/20 10:57:30 INFO DAGScheduler: Final stage: ResultStage 9 (count at utils.scala:135)
+21/03/20 10:57:30 INFO DAGScheduler: Parents of final stage: List(ShuffleMapStage 8)
+21/03/20 10:57:30 INFO DAGScheduler: Missing parents: List(ShuffleMapStage 8)
+21/03/20 10:57:30 INFO DAGScheduler: Submitting ShuffleMapStage 8 (MapPartitionsRDD[30] at count at utils.scala:135), which has no missing parents
+21/03/20 10:57:30 INFO MemoryStore: Block broadcast_6 stored as values in memory (estimated size 10.0 KiB, free 413.9 MiB)
+21/03/20 10:57:30 INFO MemoryStore: Block broadcast_6_piece0 stored as bytes in memory (estimated size 5.2 KiB, free 413.9 MiB)
+21/03/20 10:57:30 INFO BlockManagerInfo: Added broadcast_6_piece0 in memory on 127.0.0.1:49570 (size: 5.2 KiB, free: 413.9 MiB)
+21/03/20 10:57:30 INFO SparkContext: Created broadcast 6 from broadcast at DAGScheduler.scala:1223
+21/03/20 10:57:30 INFO DAGScheduler: Submitting 1 missing tasks from ShuffleMapStage 8 (MapPartitionsRDD[30] at count at utils.scala:135) (first 15 tasks are for partitions Vector(0))
+21/03/20 10:57:30 INFO TaskSchedulerImpl: Adding task set 8.0 with 1 tasks
+21/03/20 10:57:30 INFO TaskSetManager: Starting task 0.0 in stage 8.0 (TID 6, 127.0.0.1, executor driver, partition 0, PROCESS_LOCAL, 7550 bytes)
+21/03/20 10:57:30 INFO Executor: Running task 0.0 in stage 8.0 (TID 6)
+21/03/20 10:57:30 INFO Executor: Finished task 0.0 in stage 8.0 (TID 6). 1790 bytes result sent to driver
+21/03/20 10:57:30 INFO TaskSetManager: Finished task 0.0 in stage 8.0 (TID 6) in 28 ms on 127.0.0.1 (executor driver) (1/1)
+21/03/20 10:57:30 INFO TaskSchedulerImpl: Removed TaskSet 8.0, whose tasks have all completed, from pool 
+21/03/20 10:57:30 INFO DAGScheduler: ShuffleMapStage 8 (count at utils.scala:135) finished in 0,048 s
+21/03/20 10:57:30 INFO DAGScheduler: looking for newly runnable stages
+21/03/20 10:57:30 INFO DAGScheduler: running: Set()
+21/03/20 10:57:30 INFO DAGScheduler: waiting: Set(ResultStage 9)
+21/03/20 10:57:30 INFO DAGScheduler: failed: Set()
+21/03/20 10:57:30 INFO DAGScheduler: Submitting ResultStage 9 (MapPartitionsRDD[33] at count at utils.scala:135), which has no missing parents
+21/03/20 10:57:30 INFO MemoryStore: Block broadcast_7 stored as values in memory (estimated size 10.1 KiB, free 413.9 MiB)
+21/03/20 10:57:30 INFO MemoryStore: Block broadcast_7_piece0 stored as bytes in memory (estimated size 5.0 KiB, free 413.9 MiB)
+21/03/20 10:57:30 INFO BlockManagerInfo: Added broadcast_7_piece0 in memory on 127.0.0.1:49570 (size: 5.0 KiB, free: 413.9 MiB)
+21/03/20 10:57:30 INFO SparkContext: Created broadcast 7 from broadcast at DAGScheduler.scala:1223
+21/03/20 10:57:30 INFO DAGScheduler: Submitting 1 missing tasks from ResultStage 9 (MapPartitionsRDD[33] at count at utils.scala:135) (first 15 tasks are for partitions Vector(0))
+21/03/20 10:57:30 INFO TaskSchedulerImpl: Adding task set 9.0 with 1 tasks
+21/03/20 10:57:30 INFO TaskSetManager: Starting task 0.0 in stage 9.0 (TID 7, 127.0.0.1, executor driver, partition 0, NODE_LOCAL, 7325 bytes)
+21/03/20 10:57:30 INFO Executor: Running task 0.0 in stage 9.0 (TID 7)
+21/03/20 10:57:30 INFO ShuffleBlockFetcherIterator: Getting 1 (60.0 B) non-empty blocks including 1 (60.0 B) local and 0 (0.0 B) host-local and 0 (0.0 B) remote blocks
+21/03/20 10:57:30 INFO ShuffleBlockFetcherIterator: Started 0 remote fetches in 1 ms
+21/03/20 10:57:30 INFO Executor: Finished task 0.0 in stage 9.0 (TID 7). 2562 bytes result sent to driver
+21/03/20 10:57:30 INFO TaskSetManager: Finished task 0.0 in stage 9.0 (TID 7) in 20 ms on 127.0.0.1 (executor driver) (1/1)
+21/03/20 10:57:30 INFO TaskSchedulerImpl: Removed TaskSet 9.0, whose tasks have all completed, from pool 
+21/03/20 10:57:30 INFO DAGScheduler: ResultStage 9 (count at utils.scala:135) finished in 0,052 s
+21/03/20 10:57:30 INFO DAGScheduler: Job 6 is finished. Cancelling potential speculative or zombie tasks for this job
+21/03/20 10:57:30 INFO TaskSchedulerImpl: Killing all running tasks in stage 9: Stage finished
+21/03/20 10:57:30 INFO DAGScheduler: Job 6 finished: count at utils.scala:135, took 0,118277 s
+21/03/20 10:57:30 INFO HiveMetaStore: 0: get_database: default
+21/03/20 10:57:30 INFO audit: ugi=wilto	ip=unknown-ip-addr	cmd=get_database: default	
+21/03/20 10:57:30 INFO HiveMetaStore: 0: get_database: default
+21/03/20 10:57:30 INFO audit: ugi=wilto	ip=unknown-ip-addr	cmd=get_database: default	
+21/03/20 10:57:30 INFO HiveMetaStore: 0: get_tables: db=default pat=*
+21/03/20 10:57:30 INFO audit: ugi=wilto	ip=unknown-ip-addr	cmd=get_tables: db=default pat=*	
+21/03/20 10:57:30 INFO BlockManagerInfo: Removed broadcast_6_piece0 on 127.0.0.1:49570 in memory (size: 5.2 KiB, free: 413.9 MiB)
+21/03/20 10:57:30 INFO CodeGenerator: Code generated in 34.4377 ms
+21/03/20 10:57:30 INFO BlockManagerInfo: Removed broadcast_7_piece0 on 127.0.0.1:49570 in memory (size: 5.0 KiB, free: 413.9 MiB)
+21/03/20 10:57:30 INFO CodeGenerator: Code generated in 29.221 ms
+21/03/20 10:57:31 INFO CodeGenerator: Code generated in 9.8527 ms
+21/03/20 10:57:31 INFO SparkContext: Starting job: count at utils.scala:135
+21/03/20 10:57:31 INFO DAGScheduler: Registering RDD 36 (count at utils.scala:135) as input to shuffle 4
+21/03/20 10:57:31 INFO DAGScheduler: Got job 7 (count at utils.scala:135) with 1 output partitions
+21/03/20 10:57:31 INFO DAGScheduler: Final stage: ResultStage 11 (count at utils.scala:135)
+21/03/20 10:57:31 INFO DAGScheduler: Parents of final stage: List(ShuffleMapStage 10)
+21/03/20 10:57:31 INFO DAGScheduler: Missing parents: List(ShuffleMapStage 10)
+21/03/20 10:57:31 INFO DAGScheduler: Submitting ShuffleMapStage 10 (MapPartitionsRDD[36] at count at utils.scala:135), which has no missing parents
+21/03/20 10:57:31 INFO MemoryStore: Block broadcast_8 stored as values in memory (estimated size 10.1 KiB, free 413.9 MiB)
+21/03/20 10:57:31 INFO MemoryStore: Block broadcast_8_piece0 stored as bytes in memory (estimated size 5.3 KiB, free 413.9 MiB)
+21/03/20 10:57:31 INFO BlockManagerInfo: Added broadcast_8_piece0 in memory on 127.0.0.1:49570 (size: 5.3 KiB, free: 413.9 MiB)
+21/03/20 10:57:31 INFO SparkContext: Created broadcast 8 from broadcast at DAGScheduler.scala:1223
+21/03/20 10:57:31 INFO DAGScheduler: Submitting 1 missing tasks from ShuffleMapStage 10 (MapPartitionsRDD[36] at count at utils.scala:135) (first 15 tasks are for partitions Vector(0))
+21/03/20 10:57:31 INFO TaskSchedulerImpl: Adding task set 10.0 with 1 tasks
+21/03/20 10:57:31 INFO TaskSetManager: Starting task 0.0 in stage 10.0 (TID 8, 127.0.0.1, executor driver, partition 0, PROCESS_LOCAL, 7498 bytes)
+21/03/20 10:57:31 INFO Executor: Running task 0.0 in stage 10.0 (TID 8)
+21/03/20 10:57:31 INFO Executor: Finished task 0.0 in stage 10.0 (TID 8). 1790 bytes result sent to driver
+21/03/20 10:57:31 INFO TaskSetManager: Finished task 0.0 in stage 10.0 (TID 8) in 48 ms on 127.0.0.1 (executor driver) (1/1)
+21/03/20 10:57:31 INFO TaskSchedulerImpl: Removed TaskSet 10.0, whose tasks have all completed, from pool 
+21/03/20 10:57:31 INFO DAGScheduler: ShuffleMapStage 10 (count at utils.scala:135) finished in 0,068 s
+21/03/20 10:57:31 INFO DAGScheduler: looking for newly runnable stages
+21/03/20 10:57:31 INFO DAGScheduler: running: Set()
+21/03/20 10:57:31 INFO DAGScheduler: waiting: Set(ResultStage 11)
+21/03/20 10:57:31 INFO DAGScheduler: failed: Set()
+21/03/20 10:57:31 INFO DAGScheduler: Submitting ResultStage 11 (MapPartitionsRDD[39] at count at utils.scala:135), which has no missing parents
+21/03/20 10:57:31 INFO MemoryStore: Block broadcast_9 stored as values in memory (estimated size 10.1 KiB, free 413.9 MiB)
+21/03/20 10:57:31 INFO MemoryStore: Block broadcast_9_piece0 stored as bytes in memory (estimated size 5.0 KiB, free 413.9 MiB)
+21/03/20 10:57:31 INFO BlockManagerInfo: Added broadcast_9_piece0 in memory on 127.0.0.1:49570 (size: 5.0 KiB, free: 413.9 MiB)
+21/03/20 10:57:31 INFO SparkContext: Created broadcast 9 from broadcast at DAGScheduler.scala:1223
+21/03/20 10:57:31 INFO DAGScheduler: Submitting 1 missing tasks from ResultStage 11 (MapPartitionsRDD[39] at count at utils.scala:135) (first 15 tasks are for partitions Vector(0))
+21/03/20 10:57:31 INFO TaskSchedulerImpl: Adding task set 11.0 with 1 tasks
+21/03/20 10:57:31 INFO TaskSetManager: Starting task 0.0 in stage 11.0 (TID 9, 127.0.0.1, executor driver, partition 0, NODE_LOCAL, 7325 bytes)
+21/03/20 10:57:31 INFO Executor: Running task 0.0 in stage 11.0 (TID 9)
+21/03/20 10:57:31 INFO ShuffleBlockFetcherIterator: Getting 1 (60.0 B) non-empty blocks including 1 (60.0 B) local and 0 (0.0 B) host-local and 0 (0.0 B) remote blocks
+21/03/20 10:57:31 INFO ShuffleBlockFetcherIterator: Started 0 remote fetches in 1 ms
+21/03/20 10:57:31 INFO Executor: Finished task 0.0 in stage 11.0 (TID 9). 2605 bytes result sent to driver
+21/03/20 10:57:31 INFO TaskSetManager: Finished task 0.0 in stage 11.0 (TID 9) in 20 ms on 127.0.0.1 (executor driver) (1/1)
+21/03/20 10:57:31 INFO TaskSchedulerImpl: Removed TaskSet 11.0, whose tasks have all completed, from pool 
+21/03/20 10:57:31 INFO DAGScheduler: ResultStage 11 (count at utils.scala:135) finished in 0,036 s
+21/03/20 10:57:31 INFO DAGScheduler: Job 7 is finished. Cancelling potential speculative or zombie tasks for this job
+21/03/20 10:57:31 INFO TaskSchedulerImpl: Killing all running tasks in stage 11: Stage finished
+21/03/20 10:57:31 INFO DAGScheduler: Job 7 finished: count at utils.scala:135, took 0,125275 s
+21/03/20 10:58:11 INFO BlockManagerInfo: Removed broadcast_9_piece0 on 127.0.0.1:49570 in memory (size: 5.0 KiB, free: 413.9 MiB)
+21/03/20 10:58:11 INFO BlockManagerInfo: Removed broadcast_8_piece0 on 127.0.0.1:49570 in memory (size: 5.3 KiB, free: 413.9 MiB)
+21/03/20 10:58:11 INFO CodeGenerator: Code generated in 65.9332 ms
+21/03/20 10:58:11 INFO CodeGenerator: Code generated in 22.1428 ms
+21/03/20 10:58:11 INFO SparkContext: Starting job: collect at utils.scala:137
+21/03/20 10:58:11 INFO DAGScheduler: Got job 8 (collect at utils.scala:137) with 1 output partitions
+21/03/20 10:58:11 INFO DAGScheduler: Final stage: ResultStage 12 (collect at utils.scala:137)
+21/03/20 10:58:11 INFO DAGScheduler: Parents of final stage: List()
+21/03/20 10:58:11 INFO DAGScheduler: Missing parents: List()
+21/03/20 10:58:11 INFO DAGScheduler: Submitting ResultStage 12 (MapPartitionsRDD[46] at collect at utils.scala:137), which has no missing parents
+21/03/20 10:58:11 INFO MemoryStore: Block broadcast_10 stored as values in memory (estimated size 29.0 KiB, free 413.9 MiB)
+21/03/20 10:58:11 INFO MemoryStore: Block broadcast_10_piece0 stored as bytes in memory (estimated size 10.0 KiB, free 413.9 MiB)
+21/03/20 10:58:11 INFO BlockManagerInfo: Added broadcast_10_piece0 in memory on 127.0.0.1:49570 (size: 10.0 KiB, free: 413.9 MiB)
+21/03/20 10:58:11 INFO SparkContext: Created broadcast 10 from broadcast at DAGScheduler.scala:1223
+21/03/20 10:58:11 INFO DAGScheduler: Submitting 1 missing tasks from ResultStage 12 (MapPartitionsRDD[46] at collect at utils.scala:137) (first 15 tasks are for partitions Vector(0))
+21/03/20 10:58:11 INFO TaskSchedulerImpl: Adding task set 12.0 with 1 tasks
+21/03/20 10:58:11 INFO TaskSetManager: Starting task 0.0 in stage 12.0 (TID 10, 127.0.0.1, executor driver, partition 0, PROCESS_LOCAL, 11108 bytes)
+21/03/20 10:58:11 INFO Executor: Running task 0.0 in stage 12.0 (TID 10)
+21/03/20 10:58:11 INFO MemoryStore: Block rdd_41_0 stored as values in memory (estimated size 3.9 KiB, free 413.9 MiB)
+21/03/20 10:58:11 INFO BlockManagerInfo: Added rdd_41_0 in memory on 127.0.0.1:49570 (size: 3.9 KiB, free: 413.9 MiB)
+21/03/20 10:58:11 INFO CodeGenerator: Code generated in 13.6661 ms
+21/03/20 10:58:11 INFO Executor: 1 block locks were not released by TID = 10:
+[rdd_41_0]
+21/03/20 10:58:11 INFO Executor: Finished task 0.0 in stage 12.0 (TID 10). 2226 bytes result sent to driver
+21/03/20 10:58:11 INFO TaskSetManager: Finished task 0.0 in stage 12.0 (TID 10) in 297 ms on 127.0.0.1 (executor driver) (1/1)
+21/03/20 10:58:11 INFO TaskSchedulerImpl: Removed TaskSet 12.0, whose tasks have all completed, from pool 
+21/03/20 10:58:11 INFO DAGScheduler: ResultStage 12 (collect at utils.scala:137) finished in 0,341 s
+21/03/20 10:58:11 INFO DAGScheduler: Job 8 is finished. Cancelling potential speculative or zombie tasks for this job
+21/03/20 10:58:11 INFO TaskSchedulerImpl: Killing all running tasks in stage 12: Stage finished
+21/03/20 10:58:11 INFO DAGScheduler: Job 8 finished: collect at utils.scala:137, took 0,358607 s
+21/03/20 10:58:11 INFO CodeGenerator: Code generated in 16.4322 ms
+21/03/20 10:58:11 INFO BlockManagerInfo: Removed broadcast_10_piece0 on 127.0.0.1:49570 in memory (size: 10.0 KiB, free: 413.9 MiB)
+21/03/20 10:58:11 INFO CodeGenerator: Code generated in 21.1689 ms
+21/03/20 10:58:11 INFO CodeGenerator: Code generated in 12.1508 ms
+21/03/20 10:58:12 INFO SparkContext: Starting job: count at utils.scala:135
+21/03/20 10:58:12 INFO DAGScheduler: Registering RDD 51 (count at utils.scala:135) as input to shuffle 5
+21/03/20 10:58:12 INFO DAGScheduler: Got job 9 (count at utils.scala:135) with 1 output partitions
+21/03/20 10:58:12 INFO DAGScheduler: Final stage: ResultStage 14 (count at utils.scala:135)
+21/03/20 10:58:12 INFO DAGScheduler: Parents of final stage: List(ShuffleMapStage 13)
+21/03/20 10:58:12 INFO DAGScheduler: Missing parents: List(ShuffleMapStage 13)
+21/03/20 10:58:12 INFO DAGScheduler: Submitting ShuffleMapStage 13 (MapPartitionsRDD[51] at count at utils.scala:135), which has no missing parents
+21/03/20 10:58:12 INFO MemoryStore: Block broadcast_11 stored as values in memory (estimated size 25.0 KiB, free 413.9 MiB)
+21/03/20 10:58:12 INFO MemoryStore: Block broadcast_11_piece0 stored as bytes in memory (estimated size 10.2 KiB, free 413.9 MiB)
+21/03/20 10:58:12 INFO BlockManagerInfo: Added broadcast_11_piece0 in memory on 127.0.0.1:49570 (size: 10.2 KiB, free: 413.9 MiB)
+21/03/20 10:58:12 INFO SparkContext: Created broadcast 11 from broadcast at DAGScheduler.scala:1223
+21/03/20 10:58:12 INFO DAGScheduler: Submitting 1 missing tasks from ShuffleMapStage 13 (MapPartitionsRDD[51] at count at utils.scala:135) (first 15 tasks are for partitions Vector(0))
+21/03/20 10:58:12 INFO TaskSchedulerImpl: Adding task set 13.0 with 1 tasks
+21/03/20 10:58:12 INFO TaskSetManager: Starting task 0.0 in stage 13.0 (TID 11, 127.0.0.1, executor driver, partition 0, PROCESS_LOCAL, 11097 bytes)
+21/03/20 10:58:12 INFO Executor: Running task 0.0 in stage 13.0 (TID 11)
+21/03/20 10:58:12 INFO BlockManager: Found block rdd_41_0 locally
+21/03/20 10:58:12 INFO Executor: 1 block locks were not released by TID = 11:
+[rdd_41_0]
+21/03/20 10:58:12 INFO Executor: Finished task 0.0 in stage 13.0 (TID 11). 2127 bytes result sent to driver
+21/03/20 10:58:12 INFO TaskSetManager: Finished task 0.0 in stage 13.0 (TID 11) in 40 ms on 127.0.0.1 (executor driver) (1/1)
+21/03/20 10:58:12 INFO TaskSchedulerImpl: Removed TaskSet 13.0, whose tasks have all completed, from pool 
+21/03/20 10:58:12 INFO DAGScheduler: ShuffleMapStage 13 (count at utils.scala:135) finished in 0,064 s
+21/03/20 10:58:12 INFO DAGScheduler: looking for newly runnable stages
+21/03/20 10:58:12 INFO DAGScheduler: running: Set()
+21/03/20 10:58:12 INFO DAGScheduler: waiting: Set(ResultStage 14)
+21/03/20 10:58:12 INFO DAGScheduler: failed: Set()
+21/03/20 10:58:12 INFO DAGScheduler: Submitting ResultStage 14 (MapPartitionsRDD[54] at count at utils.scala:135), which has no missing parents
+21/03/20 10:58:12 INFO MemoryStore: Block broadcast_12 stored as values in memory (estimated size 11.5 KiB, free 413.9 MiB)
+21/03/20 10:58:12 INFO MemoryStore: Block broadcast_12_piece0 stored as bytes in memory (estimated size 5.3 KiB, free 413.9 MiB)
+21/03/20 10:58:12 INFO BlockManagerInfo: Added broadcast_12_piece0 in memory on 127.0.0.1:49570 (size: 5.3 KiB, free: 413.9 MiB)
+21/03/20 10:58:12 INFO SparkContext: Created broadcast 12 from broadcast at DAGScheduler.scala:1223
+21/03/20 10:58:12 INFO DAGScheduler: Submitting 1 missing tasks from ResultStage 14 (MapPartitionsRDD[54] at count at utils.scala:135) (first 15 tasks are for partitions Vector(0))
+21/03/20 10:58:12 INFO TaskSchedulerImpl: Adding task set 14.0 with 1 tasks
+21/03/20 10:58:12 INFO TaskSetManager: Starting task 0.0 in stage 14.0 (TID 12, 127.0.0.1, executor driver, partition 0, NODE_LOCAL, 7325 bytes)
+21/03/20 10:58:12 INFO Executor: Running task 0.0 in stage 14.0 (TID 12)
+21/03/20 10:58:12 INFO ShuffleBlockFetcherIterator: Getting 1 (54.0 B) non-empty blocks including 1 (54.0 B) local and 0 (0.0 B) host-local and 0 (0.0 B) remote blocks
+21/03/20 10:58:12 INFO ShuffleBlockFetcherIterator: Started 0 remote fetches in 1 ms
+21/03/20 10:58:12 INFO Executor: Finished task 0.0 in stage 14.0 (TID 12). 2428 bytes result sent to driver
+21/03/20 10:58:12 INFO TaskSetManager: Finished task 0.0 in stage 14.0 (TID 12) in 24 ms on 127.0.0.1 (executor driver) (1/1)
+21/03/20 10:58:12 INFO TaskSchedulerImpl: Removed TaskSet 14.0, whose tasks have all completed, from pool 
+21/03/20 10:58:12 INFO DAGScheduler: ResultStage 14 (count at utils.scala:135) finished in 0,036 s
+21/03/20 10:58:12 INFO DAGScheduler: Job 9 is finished. Cancelling potential speculative or zombie tasks for this job
+21/03/20 10:58:12 INFO TaskSchedulerImpl: Killing all running tasks in stage 14: Stage finished
+21/03/20 10:58:12 INFO DAGScheduler: Job 9 finished: count at utils.scala:135, took 0,119747 s
+21/03/20 11:01:56 INFO BlockManagerInfo: Removed broadcast_12_piece0 on 127.0.0.1:49570 in memory (size: 5.3 KiB, free: 413.9 MiB)
+21/03/20 11:01:56 INFO BlockManagerInfo: Removed broadcast_11_piece0 on 127.0.0.1:49570 in memory (size: 10.2 KiB, free: 413.9 MiB)
+21/03/20 11:05:09 INFO CodeGenerator: Code generated in 16.2076 ms
+21/03/20 11:05:09 INFO SparkContext: Starting job: collect at utils.scala:137
+21/03/20 11:05:09 INFO DAGScheduler: Registering RDD 56 (collect at utils.scala:137) as input to shuffle 6
+21/03/20 11:05:09 INFO DAGScheduler: Got job 10 (collect at utils.scala:137) with 1 output partitions
+21/03/20 11:05:09 INFO DAGScheduler: Final stage: ResultStage 16 (collect at utils.scala:137)
+21/03/20 11:05:09 INFO DAGScheduler: Parents of final stage: List(ShuffleMapStage 15)
+21/03/20 11:05:09 INFO DAGScheduler: Missing parents: List(ShuffleMapStage 15)
+21/03/20 11:05:09 INFO DAGScheduler: Submitting ShuffleMapStage 15 (MapPartitionsRDD[56] at collect at utils.scala:137), which has no missing parents
+21/03/20 11:05:09 INFO MemoryStore: Block broadcast_13 stored as values in memory (estimated size 10.1 KiB, free 413.9 MiB)
+21/03/20 11:05:09 INFO MemoryStore: Block broadcast_13_piece0 stored as bytes in memory (estimated size 5.2 KiB, free 413.9 MiB)
+21/03/20 11:05:09 INFO BlockManagerInfo: Added broadcast_13_piece0 in memory on 127.0.0.1:49570 (size: 5.2 KiB, free: 413.9 MiB)
+21/03/20 11:05:09 INFO SparkContext: Created broadcast 13 from broadcast at DAGScheduler.scala:1223
+21/03/20 11:05:09 INFO DAGScheduler: Submitting 1 missing tasks from ShuffleMapStage 15 (MapPartitionsRDD[56] at collect at utils.scala:137) (first 15 tasks are for partitions Vector(0))
+21/03/20 11:05:09 INFO TaskSchedulerImpl: Adding task set 15.0 with 1 tasks
+21/03/20 11:05:09 INFO TaskSetManager: Starting task 0.0 in stage 15.0 (TID 13, 127.0.0.1, executor driver, partition 0, PROCESS_LOCAL, 11097 bytes)
+21/03/20 11:05:09 INFO Executor: Running task 0.0 in stage 15.0 (TID 13)
+21/03/20 11:05:09 INFO Executor: Finished task 0.0 in stage 15.0 (TID 13). 1876 bytes result sent to driver
+21/03/20 11:05:09 INFO TaskSetManager: Finished task 0.0 in stage 15.0 (TID 13) in 64 ms on 127.0.0.1 (executor driver) (1/1)
+21/03/20 11:05:09 INFO TaskSchedulerImpl: Removed TaskSet 15.0, whose tasks have all completed, from pool 
+21/03/20 11:05:09 INFO DAGScheduler: ShuffleMapStage 15 (collect at utils.scala:137) finished in 0,076 s
+21/03/20 11:05:09 INFO DAGScheduler: looking for newly runnable stages
+21/03/20 11:05:09 INFO DAGScheduler: running: Set()
+21/03/20 11:05:09 INFO DAGScheduler: waiting: Set(ResultStage 16)
+21/03/20 11:05:09 INFO DAGScheduler: failed: Set()
+21/03/20 11:05:09 INFO DAGScheduler: Submitting ResultStage 16 (MapPartitionsRDD[59] at collect at utils.scala:137), which has no missing parents
+21/03/20 11:05:09 INFO MemoryStore: Block broadcast_14 stored as values in memory (estimated size 10.1 KiB, free 413.9 MiB)
+21/03/20 11:05:09 INFO MemoryStore: Block broadcast_14_piece0 stored as bytes in memory (estimated size 5.0 KiB, free 413.9 MiB)
+21/03/20 11:05:09 INFO BlockManagerInfo: Added broadcast_14_piece0 in memory on 127.0.0.1:49570 (size: 5.0 KiB, free: 413.9 MiB)
+21/03/20 11:05:09 INFO SparkContext: Created broadcast 14 from broadcast at DAGScheduler.scala:1223
+21/03/20 11:05:09 INFO DAGScheduler: Submitting 1 missing tasks from ResultStage 16 (MapPartitionsRDD[59] at collect at utils.scala:137) (first 15 tasks are for partitions Vector(0))
+21/03/20 11:05:09 INFO TaskSchedulerImpl: Adding task set 16.0 with 1 tasks
+21/03/20 11:05:09 INFO TaskSetManager: Starting task 0.0 in stage 16.0 (TID 14, 127.0.0.1, executor driver, partition 0, NODE_LOCAL, 7325 bytes)
+21/03/20 11:05:09 INFO Executor: Running task 0.0 in stage 16.0 (TID 14)
+21/03/20 11:05:09 INFO ShuffleBlockFetcherIterator: Getting 1 (60.0 B) non-empty blocks including 1 (60.0 B) local and 0 (0.0 B) host-local and 0 (0.0 B) remote blocks
+21/03/20 11:05:09 INFO ShuffleBlockFetcherIterator: Started 0 remote fetches in 1 ms
+21/03/20 11:05:09 INFO Executor: Finished task 0.0 in stage 16.0 (TID 14). 2605 bytes result sent to driver
+21/03/20 11:05:09 INFO TaskSetManager: Finished task 0.0 in stage 16.0 (TID 14) in 20 ms on 127.0.0.1 (executor driver) (1/1)
+21/03/20 11:05:09 INFO TaskSchedulerImpl: Removed TaskSet 16.0, whose tasks have all completed, from pool 
+21/03/20 11:05:09 INFO DAGScheduler: ResultStage 16 (collect at utils.scala:137) finished in 0,036 s
+21/03/20 11:05:09 INFO DAGScheduler: Job 10 is finished. Cancelling potential speculative or zombie tasks for this job
+21/03/20 11:05:09 INFO TaskSchedulerImpl: Killing all running tasks in stage 16: Stage finished
+21/03/20 11:05:09 INFO DAGScheduler: Job 10 finished: collect at utils.scala:137, took 0,127224 s
+21/03/20 11:05:09 INFO CodeGenerator: Code generated in 12.8224 ms
+21/03/20 11:05:09 INFO BlockManagerInfo: Removed broadcast_13_piece0 on 127.0.0.1:49570 in memory (size: 5.2 KiB, free: 413.9 MiB)
+21/03/20 11:05:09 INFO BlockManagerInfo: Removed broadcast_14_piece0 on 127.0.0.1:49570 in memory (size: 5.0 KiB, free: 413.9 MiB)
+21/03/20 11:05:10 INFO CodeGenerator: Code generated in 29.3132 ms
+21/03/20 11:05:10 INFO CodeGenerator: Code generated in 17.077 ms
+21/03/20 11:05:10 INFO SparkContext: Starting job: count at utils.scala:135
+21/03/20 11:05:10 INFO DAGScheduler: Registering RDD 61 (count at utils.scala:135) as input to shuffle 7
+21/03/20 11:05:10 INFO DAGScheduler: Got job 11 (count at utils.scala:135) with 1 output partitions
+21/03/20 11:05:10 INFO DAGScheduler: Final stage: ResultStage 18 (count at utils.scala:135)
+21/03/20 11:05:10 INFO DAGScheduler: Parents of final stage: List(ShuffleMapStage 17)
+21/03/20 11:05:10 INFO DAGScheduler: Missing parents: List(ShuffleMapStage 17)
+21/03/20 11:05:10 INFO DAGScheduler: Submitting ShuffleMapStage 17 (MapPartitionsRDD[61] at count at utils.scala:135), which has no missing parents
+21/03/20 11:05:10 INFO MemoryStore: Block broadcast_15 stored as values in memory (estimated size 9.1 KiB, free 413.9 MiB)
+21/03/20 11:05:10 INFO MemoryStore: Block broadcast_15_piece0 stored as bytes in memory (estimated size 4.8 KiB, free 413.9 MiB)
+21/03/20 11:05:10 INFO BlockManagerInfo: Added broadcast_15_piece0 in memory on 127.0.0.1:49570 (size: 4.8 KiB, free: 413.9 MiB)
+21/03/20 11:05:10 INFO SparkContext: Created broadcast 15 from broadcast at DAGScheduler.scala:1223
+21/03/20 11:05:10 INFO DAGScheduler: Submitting 1 missing tasks from ShuffleMapStage 17 (MapPartitionsRDD[61] at count at utils.scala:135) (first 15 tasks are for partitions Vector(0))
+21/03/20 11:05:10 INFO TaskSchedulerImpl: Adding task set 17.0 with 1 tasks
+21/03/20 11:05:10 INFO TaskSetManager: Starting task 0.0 in stage 17.0 (TID 15, 127.0.0.1, executor driver, partition 0, PROCESS_LOCAL, 11097 bytes)
+21/03/20 11:05:10 INFO Executor: Running task 0.0 in stage 17.0 (TID 15)
+21/03/20 11:05:10 INFO Executor: Finished task 0.0 in stage 17.0 (TID 15). 1833 bytes result sent to driver
+21/03/20 11:05:10 INFO TaskSetManager: Finished task 0.0 in stage 17.0 (TID 15) in 201 ms on 127.0.0.1 (executor driver) (1/1)
+21/03/20 11:05:10 INFO TaskSchedulerImpl: Removed TaskSet 17.0, whose tasks have all completed, from pool 
+21/03/20 11:05:10 INFO DAGScheduler: ShuffleMapStage 17 (count at utils.scala:135) finished in 0,221 s
+21/03/20 11:05:10 INFO DAGScheduler: looking for newly runnable stages
+21/03/20 11:05:10 INFO DAGScheduler: running: Set()
+21/03/20 11:05:10 INFO DAGScheduler: waiting: Set(ResultStage 18)
+21/03/20 11:05:10 INFO DAGScheduler: failed: Set()
+21/03/20 11:05:10 INFO DAGScheduler: Submitting ResultStage 18 (MapPartitionsRDD[64] at count at utils.scala:135), which has no missing parents
+21/03/20 11:05:10 INFO MemoryStore: Block broadcast_16 stored as values in memory (estimated size 12.1 KiB, free 413.9 MiB)
+21/03/20 11:05:10 INFO MemoryStore: Block broadcast_16_piece0 stored as bytes in memory (estimated size 5.3 KiB, free 413.9 MiB)
+21/03/20 11:05:10 INFO BlockManagerInfo: Added broadcast_16_piece0 in memory on 127.0.0.1:49570 (size: 5.3 KiB, free: 413.9 MiB)
+21/03/20 11:05:10 INFO SparkContext: Created broadcast 16 from broadcast at DAGScheduler.scala:1223
+21/03/20 11:05:10 INFO DAGScheduler: Submitting 1 missing tasks from ResultStage 18 (MapPartitionsRDD[64] at count at utils.scala:135) (first 15 tasks are for partitions Vector(0))
+21/03/20 11:05:10 INFO TaskSchedulerImpl: Adding task set 18.0 with 1 tasks
+21/03/20 11:05:10 INFO TaskSetManager: Starting task 0.0 in stage 18.0 (TID 16, 127.0.0.1, executor driver, partition 0, NODE_LOCAL, 7325 bytes)
+21/03/20 11:05:10 INFO Executor: Running task 0.0 in stage 18.0 (TID 16)
+21/03/20 11:05:10 INFO ShuffleBlockFetcherIterator: Getting 1 (49.0 B) non-empty blocks including 1 (49.0 B) local and 0 (0.0 B) host-local and 0 (0.0 B) remote blocks
+21/03/20 11:05:10 INFO ShuffleBlockFetcherIterator: Started 0 remote fetches in 1 ms
+21/03/20 11:05:10 INFO Executor: Finished task 0.0 in stage 18.0 (TID 16). 2853 bytes result sent to driver
+21/03/20 11:05:10 INFO TaskSetManager: Finished task 0.0 in stage 18.0 (TID 16) in 24 ms on 127.0.0.1 (executor driver) (1/1)
+21/03/20 11:05:10 INFO TaskSchedulerImpl: Removed TaskSet 18.0, whose tasks have all completed, from pool 
+21/03/20 11:05:10 INFO DAGScheduler: ResultStage 18 (count at utils.scala:135) finished in 0,056 s
+21/03/20 11:05:10 INFO DAGScheduler: Job 11 is finished. Cancelling potential speculative or zombie tasks for this job
+21/03/20 11:05:10 INFO TaskSchedulerImpl: Killing all running tasks in stage 18: Stage finished
+21/03/20 11:05:10 INFO DAGScheduler: Job 11 finished: count at utils.scala:135, took 0,293189 s
+21/03/20 11:05:44 INFO BlockManagerInfo: Removed broadcast_15_piece0 on 127.0.0.1:49570 in memory (size: 4.8 KiB, free: 413.9 MiB)
+21/03/20 11:05:44 INFO BlockManagerInfo: Removed broadcast_16_piece0 on 127.0.0.1:49570 in memory (size: 5.3 KiB, free: 413.9 MiB)
+21/03/20 11:05:44 INFO SparkContext: Starting job: collect at utils.scala:137
+21/03/20 11:05:44 INFO DAGScheduler: Registering RDD 66 (collect at utils.scala:137) as input to shuffle 8
+21/03/20 11:05:44 INFO DAGScheduler: Got job 12 (collect at utils.scala:137) with 1 output partitions
+21/03/20 11:05:44 INFO DAGScheduler: Final stage: ResultStage 20 (collect at utils.scala:137)
+21/03/20 11:05:44 INFO DAGScheduler: Parents of final stage: List(ShuffleMapStage 19)
+21/03/20 11:05:44 INFO DAGScheduler: Missing parents: List(ShuffleMapStage 19)
+21/03/20 11:05:44 INFO DAGScheduler: Submitting ShuffleMapStage 19 (MapPartitionsRDD[66] at collect at utils.scala:137), which has no missing parents
+21/03/20 11:05:44 INFO MemoryStore: Block broadcast_17 stored as values in memory (estimated size 10.1 KiB, free 413.9 MiB)
+21/03/20 11:05:44 INFO MemoryStore: Block broadcast_17_piece0 stored as bytes in memory (estimated size 5.2 KiB, free 413.9 MiB)
+21/03/20 11:05:44 INFO BlockManagerInfo: Added broadcast_17_piece0 in memory on 127.0.0.1:49570 (size: 5.2 KiB, free: 413.9 MiB)
+21/03/20 11:05:44 INFO SparkContext: Created broadcast 17 from broadcast at DAGScheduler.scala:1223
+21/03/20 11:05:44 INFO DAGScheduler: Submitting 1 missing tasks from ShuffleMapStage 19 (MapPartitionsRDD[66] at collect at utils.scala:137) (first 15 tasks are for partitions Vector(0))
+21/03/20 11:05:44 INFO TaskSchedulerImpl: Adding task set 19.0 with 1 tasks
+21/03/20 11:05:44 INFO TaskSetManager: Starting task 0.0 in stage 19.0 (TID 17, 127.0.0.1, executor driver, partition 0, PROCESS_LOCAL, 11097 bytes)
+21/03/20 11:05:44 INFO Executor: Running task 0.0 in stage 19.0 (TID 17)
+21/03/20 11:05:44 INFO Executor: Finished task 0.0 in stage 19.0 (TID 17). 1790 bytes result sent to driver
+21/03/20 11:05:44 INFO TaskSetManager: Finished task 0.0 in stage 19.0 (TID 17) in 32 ms on 127.0.0.1 (executor driver) (1/1)
+21/03/20 11:05:44 INFO TaskSchedulerImpl: Removed TaskSet 19.0, whose tasks have all completed, from pool 
+21/03/20 11:05:44 INFO DAGScheduler: ShuffleMapStage 19 (collect at utils.scala:137) finished in 0,048 s
+21/03/20 11:05:44 INFO DAGScheduler: looking for newly runnable stages
+21/03/20 11:05:44 INFO DAGScheduler: running: Set()
+21/03/20 11:05:44 INFO DAGScheduler: waiting: Set(ResultStage 20)
+21/03/20 11:05:44 INFO DAGScheduler: failed: Set()
+21/03/20 11:05:44 INFO DAGScheduler: Submitting ResultStage 20 (MapPartitionsRDD[69] at collect at utils.scala:137), which has no missing parents
+21/03/20 11:05:44 INFO MemoryStore: Block broadcast_18 stored as values in memory (estimated size 10.0 KiB, free 413.9 MiB)
+21/03/20 11:05:44 INFO MemoryStore: Block broadcast_18_piece0 stored as bytes in memory (estimated size 5.0 KiB, free 413.9 MiB)
+21/03/20 11:05:44 INFO BlockManagerInfo: Added broadcast_18_piece0 in memory on 127.0.0.1:49570 (size: 5.0 KiB, free: 413.9 MiB)
+21/03/20 11:05:44 INFO SparkContext: Created broadcast 18 from broadcast at DAGScheduler.scala:1223
+21/03/20 11:05:44 INFO DAGScheduler: Submitting 1 missing tasks from ResultStage 20 (MapPartitionsRDD[69] at collect at utils.scala:137) (first 15 tasks are for partitions Vector(0))
+21/03/20 11:05:44 INFO TaskSchedulerImpl: Adding task set 20.0 with 1 tasks
+21/03/20 11:05:44 INFO TaskSetManager: Starting task 0.0 in stage 20.0 (TID 18, 127.0.0.1, executor driver, partition 0, NODE_LOCAL, 7325 bytes)
+21/03/20 11:05:44 INFO Executor: Running task 0.0 in stage 20.0 (TID 18)
+21/03/20 11:05:44 INFO ShuffleBlockFetcherIterator: Getting 1 (60.0 B) non-empty blocks including 1 (60.0 B) local and 0 (0.0 B) host-local and 0 (0.0 B) remote blocks
+21/03/20 11:05:44 INFO ShuffleBlockFetcherIterator: Started 0 remote fetches in 2 ms
+21/03/20 11:05:44 INFO Executor: Finished task 0.0 in stage 20.0 (TID 18). 2566 bytes result sent to driver
+21/03/20 11:05:44 INFO TaskSetManager: Finished task 0.0 in stage 20.0 (TID 18) in 20 ms on 127.0.0.1 (executor driver) (1/1)
+21/03/20 11:05:44 INFO TaskSchedulerImpl: Removed TaskSet 20.0, whose tasks have all completed, from pool 
+21/03/20 11:05:44 INFO DAGScheduler: ResultStage 20 (collect at utils.scala:137) finished in 0,044 s
+21/03/20 11:05:44 INFO DAGScheduler: Job 12 is finished. Cancelling potential speculative or zombie tasks for this job
+21/03/20 11:05:44 INFO TaskSchedulerImpl: Killing all running tasks in stage 20: Stage finished
+21/03/20 11:05:44 INFO DAGScheduler: Job 12 finished: collect at utils.scala:137, took 0,106932 s
+21/03/20 11:05:44 INFO BlockManagerInfo: Removed broadcast_17_piece0 on 127.0.0.1:49570 in memory (size: 5.2 KiB, free: 413.9 MiB)
+21/03/20 11:05:44 INFO BlockManagerInfo: Removed broadcast_18_piece0 on 127.0.0.1:49570 in memory (size: 5.0 KiB, free: 413.9 MiB)
+21/03/20 11:05:44 INFO CodeGenerator: Code generated in 21.3225 ms
+21/03/20 11:05:44 INFO SparkContext: Starting job: count at utils.scala:135
+21/03/20 11:05:44 INFO DAGScheduler: Registering RDD 71 (count at utils.scala:135) as input to shuffle 9
+21/03/20 11:05:44 INFO DAGScheduler: Got job 13 (count at utils.scala:135) with 1 output partitions
+21/03/20 11:05:44 INFO DAGScheduler: Final stage: ResultStage 22 (count at utils.scala:135)
+21/03/20 11:05:44 INFO DAGScheduler: Parents of final stage: List(ShuffleMapStage 21)
+21/03/20 11:05:44 INFO DAGScheduler: Missing parents: List(ShuffleMapStage 21)
+21/03/20 11:05:44 INFO DAGScheduler: Submitting ShuffleMapStage 21 (MapPartitionsRDD[71] at count at utils.scala:135), which has no missing parents
+21/03/20 11:05:44 INFO MemoryStore: Block broadcast_19 stored as values in memory (estimated size 9.1 KiB, free 413.9 MiB)
+21/03/20 11:05:44 INFO MemoryStore: Block broadcast_19_piece0 stored as bytes in memory (estimated size 4.8 KiB, free 413.9 MiB)
+21/03/20 11:05:44 INFO BlockManagerInfo: Added broadcast_19_piece0 in memory on 127.0.0.1:49570 (size: 4.8 KiB, free: 413.9 MiB)
+21/03/20 11:05:44 INFO SparkContext: Created broadcast 19 from broadcast at DAGScheduler.scala:1223
+21/03/20 11:05:44 INFO DAGScheduler: Submitting 1 missing tasks from ShuffleMapStage 21 (MapPartitionsRDD[71] at count at utils.scala:135) (first 15 tasks are for partitions Vector(0))
+21/03/20 11:05:44 INFO TaskSchedulerImpl: Adding task set 21.0 with 1 tasks
+21/03/20 11:05:44 INFO TaskSetManager: Starting task 0.0 in stage 21.0 (TID 19, 127.0.0.1, executor driver, partition 0, PROCESS_LOCAL, 11097 bytes)
+21/03/20 11:05:44 INFO Executor: Running task 0.0 in stage 21.0 (TID 19)
+21/03/20 11:05:44 INFO Executor: Finished task 0.0 in stage 21.0 (TID 19). 1833 bytes result sent to driver
+21/03/20 11:05:44 INFO TaskSetManager: Finished task 0.0 in stage 21.0 (TID 19) in 36 ms on 127.0.0.1 (executor driver) (1/1)
+21/03/20 11:05:44 INFO TaskSchedulerImpl: Removed TaskSet 21.0, whose tasks have all completed, from pool 
+21/03/20 11:05:44 INFO DAGScheduler: ShuffleMapStage 21 (count at utils.scala:135) finished in 0,072 s
+21/03/20 11:05:44 INFO DAGScheduler: looking for newly runnable stages
+21/03/20 11:05:44 INFO DAGScheduler: running: Set()
+21/03/20 11:05:44 INFO DAGScheduler: waiting: Set(ResultStage 22)
+21/03/20 11:05:44 INFO DAGScheduler: failed: Set()
+21/03/20 11:05:44 INFO DAGScheduler: Submitting ResultStage 22 (MapPartitionsRDD[74] at count at utils.scala:135), which has no missing parents
+21/03/20 11:05:44 INFO MemoryStore: Block broadcast_20 stored as values in memory (estimated size 12.4 KiB, free 413.9 MiB)
+21/03/20 11:05:44 INFO MemoryStore: Block broadcast_20_piece0 stored as bytes in memory (estimated size 5.4 KiB, free 413.9 MiB)
+21/03/20 11:05:44 INFO BlockManagerInfo: Added broadcast_20_piece0 in memory on 127.0.0.1:49570 (size: 5.4 KiB, free: 413.9 MiB)
+21/03/20 11:05:44 INFO SparkContext: Created broadcast 20 from broadcast at DAGScheduler.scala:1223
+21/03/20 11:05:44 INFO DAGScheduler: Submitting 1 missing tasks from ResultStage 22 (MapPartitionsRDD[74] at count at utils.scala:135) (first 15 tasks are for partitions Vector(0))
+21/03/20 11:05:44 INFO TaskSchedulerImpl: Adding task set 22.0 with 1 tasks
+21/03/20 11:05:44 INFO TaskSetManager: Starting task 0.0 in stage 22.0 (TID 20, 127.0.0.1, executor driver, partition 0, NODE_LOCAL, 7325 bytes)
+21/03/20 11:05:44 INFO Executor: Running task 0.0 in stage 22.0 (TID 20)
+21/03/20 11:05:44 INFO ShuffleBlockFetcherIterator: Getting 1 (49.0 B) non-empty blocks including 1 (49.0 B) local and 0 (0.0 B) host-local and 0 (0.0 B) remote blocks
+21/03/20 11:05:44 INFO ShuffleBlockFetcherIterator: Started 0 remote fetches in 1 ms
+21/03/20 11:05:44 INFO Executor: Finished task 0.0 in stage 22.0 (TID 20). 2853 bytes result sent to driver
+21/03/20 11:05:44 INFO TaskSetManager: Finished task 0.0 in stage 22.0 (TID 20) in 20 ms on 127.0.0.1 (executor driver) (1/1)
+21/03/20 11:05:44 INFO TaskSchedulerImpl: Removed TaskSet 22.0, whose tasks have all completed, from pool 
+21/03/20 11:05:44 INFO DAGScheduler: ResultStage 22 (count at utils.scala:135) finished in 0,036 s
+21/03/20 11:05:44 INFO DAGScheduler: Job 13 is finished. Cancelling potential speculative or zombie tasks for this job
+21/03/20 11:05:44 INFO TaskSchedulerImpl: Killing all running tasks in stage 22: Stage finished
+21/03/20 11:05:44 INFO DAGScheduler: Job 13 finished: count at utils.scala:135, took 0,120376 s
